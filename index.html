@@ -9,13 +9,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>Computer, can you count for me?</h1>
+      <h1>Typical Siri Interaction</h1>
+      <h2>Computer, can you count for me?</h2>
       <form>
         <div class="form-group">
-          <label for="input">Enter a number:</label>
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="input">A Number</label>
           <input type="number" name="input" id="input">
         </div>
-        <button type="submit" id="countUp">Count Up</button>
+        <button id="countUp">Count Up</button>
+        <button id="countDown">Count Down</button>
       </form>
       <div class="output">
         <p id="output"></p>
