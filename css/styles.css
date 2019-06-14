@@ -2,12 +2,31 @@
   width: 50%;
 }
 
-.alert, .panic, #new-computer {
+.jumbotron {
+  margin-top: 2em;
+  text-align: center;
+  padding: 1em;
+  background-color: white;
+  border: gray solid 1px;
+}
+
+#input-missing, .panic, #new-computer {
   display: none;
+}
+
+#count-output {
+  display: none;
+  padding: 2em;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2em;
 }
 
 .btn-group {
   float: right;
+}
+
+#new-computer {
+  text-align: center;
 }
 
 .panic {

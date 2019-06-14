@@ -38,12 +38,13 @@ $(function() {
 
     if (!inputName || !inputNumber) {
       $("#count-output, #new-computer").hide();
-      $(".alert").show();
+      $("#input-missing").show();
     } else {
-      $(".alert").hide();
+      $("#input-missing").hide();
       beepBoop(inputName, inputNumber);
-      $("#count-output, #new-computer").show();
+      $("#count-output").show();
       $("#count-output").text(countUpString);
+      $("#new-computer").fadeIn(8000);
     }
   })
 
@@ -55,9 +56,9 @@ $(function() {
 
     if (!inputName || !inputNumber) {
       $("#count-output, #new-computer").hide();
-      $(".alert").show();
+      $("#input-missing").show();
     } else {
-      $(".alert").hide();
+      $("#input-missing").hide();
       beepBoop(inputName, inputNumber);
       $("#count-output, #new-computer").show();
       $("#count-output").text(countDownString);
