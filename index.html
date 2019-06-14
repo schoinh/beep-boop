@@ -11,12 +11,15 @@
     <div class="container">
       <h1>Computer, can you count for me?</h1>
       <form>
-        <label for="input">Enter a number:</label>
-        <input type="number" name="input">
-        <button type="button" name="input" id="countUp">Count Up</button>
+        <div class="form-group">
+          <label for="input">Enter a number:</label>
+          <input type="number" name="input" id="input">
+        </div>
+        <button type="submit" id="countUp">Count Up</button>
       </form>
       <div class="output">
-        <p>Maybe you need a new computer...</p>
+        <p id="output"></p>
+        <!-- <p>Maybe you need a new computer...</p> -->
       </div>
     </div>
   </body>
