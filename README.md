@@ -1,8 +1,8 @@
 # Beep Boop
 
-#### A web site that outputs responses based on an input number - June 14, 2019
+#### _A web site that outputs responses based on an input number - June 14, 2019_
 
-#### By **Na Hyung Choi**
+#### _By **Na Hyung Choi**_
 
 ## Description
 
@@ -17,7 +17,15 @@ These exceptions are written from least to most important. The first exception a
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Returns error if user enters a non-numeric value** | a | Please enter a number less than or equal to 3,999 |
+| **Returns a range of numbers from 0 to the input number** | "4" | "0, 1, 2, 3, 4" |
+| **Replaces the number "3" with "I'm sorry, Dave. I'm afraid I can't do that."** | "4" | "0, 1, 2, 'I'm sorry...', 4" |
+| **Replaces the number "2" with "Boop!"** | "4" | "0, 1, 'Boop!', 'I'm sorry...', 4" |
+| **Replaces the number "1" with "Beep!"** | "4" | "0, 'Beep!', 'Boop!', 'I'm sorry...', 4" |
+| **Replaces any number containing a "3" with "I'm sorry..."** | "13" | "...11, 12, 'I'm sorry...'" |
+| **Replaces any number containing a "2" with "Boop!"** | "13" | "...11, 'Boop!', 'I'm sorry...'" |
+| **Replaces any number containing a "1" with "Boop!"** | "13" | "...'Beep!', 'Boop!', 'I'm sorry...'" |
+| **Displays the input name instead of "Dave"** | "Charlie", "4" | "0, 1, 'Boop!', 'I'm sorry, Charlie...', 4" |
+| **Outputs results in reverse order** | "4" | "4, 'I'm sorry...', 'Boop!', 'Beep!', 0" |
 
 ## Setup/Installation Requirements
 
