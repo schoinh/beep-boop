@@ -1,0 +1,26 @@
+#panicButton {
+  float: right;
+  border-radius: 3rem;
+}
+
+.alert {
+  display: none;
+}
+
+.panic {
+  display: none;
+}
+
+#panicGif {
+  width: 1000px;
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#back {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -25,9 +25,14 @@ $(function() {
 
     inputName = $("#name").val();
     inputNumber = $("#input").val();
-    beepBoop(inputName, inputNumber);
 
-    $("#output").text(countUpString);
+    if (!inputName || !inputNumber) {
+      $(".alert").show();
+    } else {
+      $(".alert").hide();
+      beepBoop(inputName, inputNumber);
+      $("#output").text(countUpString);
+    }
   })
 
   $("#countDown").click(function(event) {
@@ -35,8 +40,24 @@ $(function() {
 
     inputName = $("#name").val();
     inputNumber = $("#input").val();
-    beepBoop(inputName, inputNumber);
 
-    $("#output").text(countDownString);
+    if (!inputName || !inputNumber) {
+      $(".alert").show();
+    } else {
+      $(".alert").hide();
+      beepBoop(inputName, inputNumber);
+      $("#output").text(countDownString);
+    }
+  })
+
+  $("#panicButton").click(function(event) {
+    event.preventDefault();
+    $(".container").hide();
+    $(".panic").show();
+  })
+
+  $("#back").click(function() {
+    $(".panic").hide();
+    $(".container").show();
   })
 })

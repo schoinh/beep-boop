@@ -14,19 +14,31 @@
       <form>
         <div class="form-group">
           <label for="name">Your Name</label>
-          <input type="text" name="name" id="name">
+          <input type="text" class="form-control" id="name" placeholder="e.g., Your Majesty">
         </div>
         <div class="form-group">
           <label for="input">A Number</label>
-          <input type="number" name="input" id="input">
+          <input type="number" class="form-control" id="input">
         </div>
-        <button id="countUp">Count Up</button>
-        <button id="countDown">Count Down</button>
+        <div class="btn-group" role="group">
+          <button class="btn btn-success" id="countUp">Count Up</button>
+          <button class="btn btn-success" id="countDown">Count Down</button>
+        </div>
+        <button class="btn btn-danger" id="panicButton">PANIC</button>
       </form>
       <div class="output">
+        <br>
+        <div class="alert alert-danger" role="alert">
+          Please enter your name and a number.
+        </div>
         <p id="output"></p>
         <!-- <p>Maybe you need a new computer...</p> -->
       </div>
+    </div>
+    <div class="panic">
+      <img src="img/gijoe.gif" alt="Binary GI Joe GIF" class="img-fluid" id="panicGif">
+      <br><br>
+      <button class="btn btn-secondary" id="back">Yikes, Take Me Back</button>
     </div>
   </body>
 </html>
