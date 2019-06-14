@@ -8,23 +8,24 @@
 
 This web site takes a name and a number from a user and returns a range of numbers from 0 to the user input number with the following exceptions:
 
-* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
-* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
-* Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, <name>. I'm afraid I can't do that."
+* Numbers that contain a 1: entire number is replaced with "Beep!"
+* Numbers that contain a 2: entire number is replaced with "Boop!"
+* Numbers that contain a 3: entire number is replaced with "I'm sorry, INPUTNAME. I'm afraid I can't do that."
 
 These exceptions are written from least to most important. The first exception applies unless the second exception does, and the same with the second and third.
+
+The user has the option to make the computer count up to or count down from the input number.
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Returns a range of numbers from 0 to the input number** | "4" | "0, 1, 2, 3, 4" |
-| **Replaces the number "3" with "I'm sorry, Dave. I'm afraid I can't do that."** | "4" | "0, 1, 2, 'I'm sorry...', 4" |
+| **Replaces the number "3" with "I'm sorry, INPUTNAME. I'm afraid I can't do that."** | "4" | "0, 1, 2, 'I'm sorry...', 4" |
 | **Replaces the number "2" with "Boop!"** | "4" | "0, 1, 'Boop!', 'I'm sorry...', 4" |
 | **Replaces the number "1" with "Beep!"** | "4" | "0, 'Beep!', 'Boop!', 'I'm sorry...', 4" |
 | **Replaces any number containing a "3" with "I'm sorry..."** | "13" | "...11, 12, 'I'm sorry...'" |
 | **Replaces any number containing a "2" with "Boop!"** | "13" | "...11, 'Boop!', 'I'm sorry...'" |
 | **Replaces any number containing a "1" with "Boop!"** | "13" | "...'Beep!', 'Boop!', 'I'm sorry...'" |
-| **Displays the input name instead of "Dave"** | "Charlie", "4" | "0, 1, 'Boop!', 'I'm sorry, Charlie...', 4" |
 | **Outputs results in reverse order** | "4" | "4, 'I'm sorry...', 'Boop!', 'Beep!', 0" |
 
 ## Setup/Installation Requirements
