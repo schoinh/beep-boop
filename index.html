@@ -9,30 +9,36 @@
   </head>
   <body>
     <div class="container">
-      <h1>Typical Siri Interaction</h1>
-      <h2>Computer, can you count for me?</h2>
+      <div class="jumbotron">
+        <h1>Computer, can you count for me?</h1>
+      </div>
       <form>
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" class="form-control" id="name" placeholder="e.g., Your Majesty">
+        <div class="form-group row">
+          <label for="name" class="col-lg-3 col-form-label">Your Name:</label>
+          <div class="col-lg-9">
+            <input type="text" class="form-control" id="name" placeholder="e.g., Your Majesty">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="input">A Number</label>
-          <input type="number" class="form-control" id="input">
+        <div class="form-group row">
+          <label for="input" class="col-lg-3 col-form-label">Pick a Number:</label>
+          <div class="col-lg-9">
+            <input type="number" class="form-control" id="input" placeholder="e.g., 10, -50">
+          </div>
         </div>
-        <div class="btn-group" role="group">
-          <button class="btn btn-success" id="countUp">Count Up</button>
-          <button class="btn btn-success" id="countDown">Count Down</button>
-        </div>
+        <hr>
         <button class="btn btn-danger" id="panicButton">PANIC</button>
+        <div class="btn-group" role="group">
+          <button class="btn btn-success" id="countUp">Count from 0</button>
+          <button class="btn btn-success" id="countDown">Count to 0</button>
+        </div>
       </form>
       <div class="output">
         <br>
         <div class="alert alert-danger" role="alert">
           Please enter your name and a number.
         </div>
-        <p id="output"></p>
-        <!-- <p>Maybe you need a new computer...</p> -->
+        <p id="count-output"></p>
+        <p id="new-computer">Maybe you need a new computer... <a href="https://www.apple.com/mac/compare/">This</a> will help you...</p>
       </div>
     </div>
     <div class="panic">

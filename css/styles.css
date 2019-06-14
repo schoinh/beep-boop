@@ -1,14 +1,21 @@
-#panicButton {
-  float: right;
-  border-radius: 3rem;
+.container {
+  width: 50%;
 }
 
-.alert {
+.alert, .panic, #new-computer {
   display: none;
+}
+
+.btn-group {
+  float: right;
 }
 
 .panic {
   display: none;
+}
+
+#panicButton {
+  border-radius: 3rem;
 }
 
 #panicGif {
