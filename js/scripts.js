@@ -1,7 +1,7 @@
 var input, countUpString, countDownString;
 
 var beepBoop = function(name, inputNum) {
-  array = [];
+  var array = [];
   for (var num = 0; num <= inputNum; num++) {
     num = num.toString();
     if (num.includes(3)) {
