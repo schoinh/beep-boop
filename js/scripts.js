@@ -33,16 +33,17 @@ var generateArray = function(num) {
 $(function() {
   $("#countUp").click(function(event) {
     event.preventDefault();
-
     inputName = $("#name").val();
     inputNumber = $("#input").val();
 
     if (!inputName || !inputNumber) {
+      $("#count-output, #new-computer").hide();
       $(".alert").show();
     } else {
       $(".alert").hide();
       beepBoop(inputName, inputNumber);
-      $("#output").text(countUpString);
+      $("#count-output, #new-computer").show();
+      $("#count-output").text(countUpString);
     }
   })
 
@@ -53,11 +54,13 @@ $(function() {
     inputNumber = $("#input").val();
 
     if (!inputName || !inputNumber) {
+      $("#count-output, #new-computer").hide();
       $(".alert").show();
     } else {
       $(".alert").hide();
       beepBoop(inputName, inputNumber);
-      $("#output").text(countDownString);
+      $("#count-output, #new-computer").show();
+      $("#count-output").text(countDownString);
     }
   })
 
